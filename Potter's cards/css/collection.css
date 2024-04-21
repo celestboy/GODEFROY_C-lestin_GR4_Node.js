@@ -1,0 +1,58 @@
+
+
+
+main {
+    width: 100%;
+    margin: auto;
+    margin-top: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.owned_cards_divs {
+    width: 18vw;
+    height: 25vw;
+    background-color: rgb(223, 224, 255);
+    margin: max(50px, 2vw) 10px;
+    background-size: cover;
+}
+
+.owned_cards_link {
+    width: 18vw;
+    height: 25vw;
+    font-size: max(5px, 1.3vw);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+#delete_cards_button {
+    text-align: center;
+    margin: max(50px, 2vw) auto;
+    display: block;
+    width: 15vw;
+    min-width: 180px;
+    height: 4vw;
+    min-height: 40px;
+    font-size: max(15px, 1.2vw);
+    background-color: #ed6f6f;
+    transition: 0.1s;
+} #delete_cards_button:hover {background-color: #e03939}
+
+
+
+
+@media screen and (max-width: 400px) {
+    .owned_cards_divs {
+        margin: max(30px, 2vw) 15px;
+    }
+}
+
+
+
+
+
+/* */
+

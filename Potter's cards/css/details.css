@@ -1,0 +1,27 @@
+
+
+
+img {
+    width: 20%;
+}
+
+h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--text1-color);
+    margin-left: 2.5vw;
+    font-size: max(13px, 2vw);
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text4-color);
+    margin: 0.5vw 1.5vw;
+    font-size: max(10px, 1.7vw);
+}
+
+a {
+    margin: 1vw;
+    color: midnightblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}

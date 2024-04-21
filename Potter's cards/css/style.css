@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bc: rgb(250, 248, 248);
+  --text1-color: brown;
+  --text2-color: rgb(239, 222, 69);
+  --text3-color: rgb(60, 35, 255);
+  --text4-color: rgb(95, 75, 255);
+
+  --footer-bc: rgba(123, 119, 119, 0.8);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* DEBUT NAVBAR */
+
+nav {
+  background-color: rgba(185, 188, 255, 0.7);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  font-size: calc(0.5rem + 1.5vw);
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 60%;
+  border-radius: 1vw;
+  font-family: "karla";
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: var(--text1-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: rgb(255, 79, 79);
+  font-weight: bold;
+}
+#icons {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  color: var(--text4-color);
+}
+
+@media (max-width: 650px) {
+  #icons {
+    display: block;
+  }
+  #icons:before {
+    content: "\2630";
+  }
+
+  .active #icons:before {
+    content: "\2715";
+  }
+
+  nav {
+    background-color: transparent;
+  }
+
+  nav ul {
+    position: fixed;
+    left: -150%;
+    top: 5%;
+    flex-direction: column;
+    background-color: var(--main-bc);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  nav li {
+    padding: 3px 0;
+  }
+  nav li:hover {
+    background-color: wheat;
+  }
+
+  nav.active ul {
+    left: 0;
+  }
+}
+
+/* FIN NAVBAR */
+
+/* DEBUT DIV UNCONNECTED */
+
+#div_unconnected {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: none;
+  background-color: rgba(70, 69, 69, 0.95);
+}
+
+#div_unconnected div {
+  margin: auto;
+}
+
+#div_unconnected p {
+  margin: max(50px, 5vw);
+  font-size: max(30px, 3.5vw);
+  font-family: "Kanit";
+  color: var(--text1-color);
+}
+
+#div_unconnected a {
+  padding: 2.5vw;
+  border-radius: 1vw;
+  border: 1.5px solid var(--text3-color);
+  background: linear-gradient(#c8faff, #53f1ff);
+  color: var(--text3-color);
+  font-family: "Ubuntu";
+  font-size: max(15px, 1.3vw);
+  transition: 0.1s;
+}
+#div_unconnected a:hover {
+  background: linear-gradient(#0bebff, #a3f7ff);
+}
+
+/* c8faff */
+
+/* FIN DIV UNCONNECTED */
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  bottom: 0;
+  height: 4vw;
+  min-height: 40px;
+  background-color: var(--footer-bc);
+  border-top: 2px solid black;
+}
+footer p {
+  top: 0;
+  transform: translate(0, 50%);
+  font-size: max(10px, 1.3vw);
+  font-family: "Kanit";
+}
